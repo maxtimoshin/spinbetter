@@ -1,0 +1,22 @@
+.header {
+    max-width: 1680px;
+    width:100%;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:40px 0 20px 0;
+}
+
+.inner-header {
+    max-width: 1600px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 40px;
+}
+
+.header-logo {
+    max-width: 400px;
+    width:100%;
+}

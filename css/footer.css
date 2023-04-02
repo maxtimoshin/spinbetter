@@ -1,0 +1,38 @@
+.footer {
+    height: 20px;
+    margin-top:auto;
+    margin-bottom:50px;
+    max-width: 1680px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+.inner-footer {
+    max-width: 1600px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 40px;
+    gap:40px;
+}
+
+.copyright {
+    white-space: nowrap;
+}
+
+.copyright,
+.terms,
+.age {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #b9b9b9;
+}
