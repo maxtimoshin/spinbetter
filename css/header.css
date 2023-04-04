@@ -1,22 +1,94 @@
 .header {
     max-width: 1680px;
-    width:100%;    
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin:40px 0 20px 0;
+    margin: 40px 0 20px 0;
 }
 
 .inner-header {
     max-width: 1600px;
-    width:100%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin:0 40px;
+    margin: 0 40px;
 }
 
 .header-logo {
     max-width: 400px;
-    width:100%;
+    width: 100%;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+.current-language {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    position: relative;
+    padding: 10px 0px 10px 10px;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 5px;
+    width: 65px;
+    display: block;
+}
+
+.current-language::after {
+    position: absolute;
+    content: "";
+    right: 20px;
+    top: 40%;
+    width: 7px;
+    height: 7px;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transform: rotate(135deg) translateX(-50%);
+    transition: all 0.3s;
+}
+
+.languages-list:hover .current-language::after {
+    transform: rotate(315deg);
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+.sub-languages-list {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.languages-list:hover .sub-languages-list {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sub-languages-list a {
+    color: black;
+    padding: 10px 0px 10px 10px;
+    text-decoration: none;
+    display: block;
+    background: #fff;
+    width: 65px;
+}
+
+.sub-languages-list a:hover {
+    background: #bebebe;
+}
+
+.sub-languages-list a:last-child {
+    border-radius: 0 0 5px 5px;
+}
+
+.languages-list:hover .current-language {
+    border-radius: 5px 5px 0 0;
+    background: #fff;
+    color: #000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 1;
 }

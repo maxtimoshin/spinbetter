@@ -37,7 +37,7 @@
       href="/img/favicons/120x120.png"
     />
 
-    <title>Document</title>
+    <title>Spinbetter</title>
   </head>
 
   <body>
@@ -45,17 +45,30 @@
       <header class="header">
         <div class="inner-header">
           <img src="./assets/images/logo.svg" class="header-logo" alt="" />
-          <div class="languages">123</div>
+
+          <ul class="languages-list">
+            <li>
+              <a class="current-language" href="">EN</a>
+              <div class="sub-languages-list">
+                <a class="language" href="">EN</a>
+                <a class="language" href="">RU</a>
+                <a class="language" href="">PL</a>
+                <a class="language" href="">DE</a>
+                <a class="language" href="">KZ</a>
+                <a class="language" href="">UZ</a>
+              </div>
+            </li>
+          </ul>
         </div>
       </header>
       <main class="main">
         <div class="inner-main">
           <div class="main-content">
-            <div class="title">
-              150% БОНУС<br />
-              НА 1-й ДЕПОЗИТ!
-            </div>
-            <button class="get-it-button">GET IT !</button>
+            <div class="title"></div>
+            <button
+              onclick="location.href = window.serverData.clickUrl"
+              class="get-it-button"
+            ></button>
           </div>
           <div class="football-players">
             <img src="./assets/images/football-players.png" alt="" />
