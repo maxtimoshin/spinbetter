@@ -1,12 +1,11 @@
 const title = document.querySelector('.title')
 const button = document.querySelector('.get-it-button')
 const currentLang = document.querySelector('.current-language')
+const languages = document.querySelectorAll('.language')
 
 currentLang.addEventListener('click', (e) => {
     e.preventDefault()
 })
-
-const languages = document.querySelectorAll('.language')
 
 const titlesT =  [
         {ru : '150% бонус на 1-й депозит!'},

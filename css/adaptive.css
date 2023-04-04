@@ -22,7 +22,7 @@
 
 @media (max-width: 768px) {
     .wrapper {
-        background-image: url("../assets/images/bg-mobile.jpg") !important;
+        background-image: url("../assets/images/bg-mobile.webp") !important;
         background-position: bottom;
     }
     .football-players {

@@ -29,6 +29,9 @@ body.lock {
 }
 
 body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
 }
 
 .wrapper {
